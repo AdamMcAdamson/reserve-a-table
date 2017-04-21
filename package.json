@@ -1,0 +1,12 @@
+{
+  "name": "restaurant-app",
+  "version": "1.0.0",
+  "description": "reservations for restaurant",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Grey, Jeran, Baggio, Adam, Luke",
+  "license": "ISC"
+}
