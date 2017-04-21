@@ -8,5 +8,10 @@
     "start": "node server.js"
   },
   "author": "Grey, Jeran, Baggio, Adam, Luke",
-  "license": "ISC"
+  "license": "ISC",
+  "depedencies": {
+    "express": ">=4.15.2",
+    "body-parser": ">=1.17.1",
+    "mysql": ">=2.13.0"
+  }
 }
