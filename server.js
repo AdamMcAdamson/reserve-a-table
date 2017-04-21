@@ -21,6 +21,7 @@ app.get("/tables", function(req, res) {
 });
 
 app.get("/reserve/api/tables/:reservation?", function(req, res) {
+	var chosen = re.params.reservation;
 
 });
 app.get("/tables/api/waitlist/", function(req, res) {
