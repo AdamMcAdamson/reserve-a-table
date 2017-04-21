@@ -11,13 +11,13 @@ app.use(bodyParser.text());
 app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
 app.get("/", function(req, res) {
-  res.sendFile(path.join(__dirname,"index.html"));
+  res.sendFile(path.join(__dirname,"html/index.html"));
 });
 app.get("/reserve", function(req, res) {
-  res.sendFile(path.join(__dirname,"reserve.html"));
+  res.sendFile(path.join(__dirname,"html/reserve.html"));
 });
 app.get("/tables", function(req, res) {
-  res.sendFile(path.join(__dirname,"tables.html"));
+  res.sendFile(path.join(__dirname,"html/tables.html"));
 });
 
 app.get("/reserve/api/tables/:reservation?", function(req, res) {
