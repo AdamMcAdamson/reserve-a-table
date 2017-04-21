@@ -9,4 +9,4 @@ Packages: express, mysql, bodyparser
 7. Use jQuery to run AJAX calls to GET and POST data from users to the Express server
 
 
-Adam - Setup MySQL Database interactions, Setup Express Server
+Adam - Setup MySQL Database interactions
