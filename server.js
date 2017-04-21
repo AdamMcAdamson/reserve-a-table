@@ -106,14 +106,30 @@ app.get("/reserve/api/tables/:reservation?", function(req, res) {
 
 	// 	// for(var i = )
 	// }
-
+});
+app.get("/tables/api/topFive/", function(req, res) {
+	connection.query("SELECT * FROM topFive", function(err, data) {
+		if (err) throw err;
+		res.json(data);
+	});
 });
 app.get("/tables/api/waitlist/", function(req, res) {
-
+	connection.query("SELECT * FROM waitlist", function(err, data) {
+		if (err) throw err;
+		res.json(data);
+	});
 });
 
 app.post("/tables/api/clear/", function(req, res) {
-
+	connection.query("DELETE FROM topFive", function(err,data){
+		if (err) throw err;
+	})
+	connection.query("DELETE FROM waitlist", function(err,data){
+		if (err) throw err;
+	})
+	connection.query("DELETE FROM mastertable", function(err,data){
+		if (err) throw err;
+	})
 });
 app.post('/reserve', function(req, res) {
 	postreserve()
