@@ -108,10 +108,10 @@ app.get("/tables", function(req, res) {
   res.sendFile(path.join(__dirname,"html/tables.html"));
 });
 app.get("/api/tables", function(req, res) {
-  res.json(tablesTable);
+  res.json(mastertable);
 });
 app.get("/api/waitlist", function(req, res) {
-  res.json(waitlistTable);
+  res.json(waitlist);
 });
 
 app.get("/reserve/api/tables/:reservation?", function(req, res) {
