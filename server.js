@@ -19,6 +19,12 @@ app.get("/reserve", function(req, res) {
 app.get("/tables", function(req, res) {
   res.sendFile(path.join(__dirname,"html/tables.html"));
 });
+app.get("/api/tables", function(req, res) {
+  res.json(tablesTable);
+});
+app.get("/api/waitlist", function(req, res) {
+  res.json(waitlistTable);
+});
 
 app.get("/reserve/api/tables/:reservation?", function(req, res) {
 
