@@ -93,6 +93,12 @@ var waitlist = [
 	}];
 
 
+	// var hot = {
+	// 	mastertable: mastertable,
+	// 	topFive: topFive,
+	// 	waitlist:
+
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());
